@@ -439,12 +439,90 @@
 
     <div class="calendar-table-wrap">
       <table class="calendar-table">
-        <thead><tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr></thead>
+        <thead>
+          <tr>
+            <th class="time-col"></th>
+            <th>일<br><span>1/10</span></th><th>월<br><span>1/11</span></th><th>화<br><span>1/12</span></th>
+            <th>수<br><span>1/13</span></th><th>목<br><span>1/14</span></th><th>금<br><span>1/15</span></th>
+            <th class="sat-col">토<br><span>1/16</span></th>
+          </tr>
+        </thead>
         <tbody>
-          <tr class="cal-date"><td>1/10(일)</td><td>1/11</td><td>1/12</td><td>1/13</td><td>1/14</td><td>1/15</td><td>1/16(토)</td></tr>
-          <tr><td colspan="7" class="cal-note">06:00–08:00 인천공항 집결·출국 수속 · 기상 및 조식·아침 루틴(체조·긍정확언) · 08:00–16:00 Fairmont International School Vietnam 정규수업 · 16:00–18:00 귀가 및 자유시간 · 18:00–19:00 저녁식사 · 19:30–20:00 에듀플렉스 자기주도 코칭 · 토요일은 닌빈(Ninh Binh) 데이투어</td></tr>
-          <tr class="cal-date"><td>1/17(일)</td><td>1/18</td><td>1/19</td><td>1/20</td><td>1/21</td><td>1/22</td><td>1/23(토)</td></tr>
-          <tr><td colspan="7" class="cal-note">일요일 하노이 시내 문화체험 · 평일 Fairmont International School Vietnam 정규수업 반복 · 토요일(1/23) 캠프 피날레 &amp; 귀국 — 서호 산책·오션파크·기념품 구입 → 피날레 저녁식사·해단식 → 공항 이동 → 23:35 하노이 출발, 익일 새벽 06:00 인천 도착</td></tr>
+          <tr>
+            <td class="time-col">06:00–08:00</td>
+            <td>인천공항 집결·출국 수속</td>
+            <td colspan="5">기상 및 조식·아침 루틴 (체조·긍정확언)</td>
+            <td class="sat-col">기상 및 조식·아침 루틴</td>
+          </tr>
+          <tr>
+            <td class="time-col">08:00–16:00</td>
+            <td>인천 10:35 출발(베트남항공)→하노이 도착</td>
+            <td colspan="5" class="hilite">Fairmont International School Vietnam 정규수업</td>
+            <td class="sat-col" rowspan="3">닌빈(Ninh Binh) 데이투어 이동 · 전통 세트식 저녁식사</td>
+          </tr>
+          <tr>
+            <td class="time-col">16:00–18:00</td>
+            <td>숙소 체크인·짐 정리</td>
+            <td colspan="5">귀가 및 자유시간</td>
+          </tr>
+          <tr>
+            <td class="time-col">18:00–19:00</td>
+            <td>웰컴 저녁식사</td>
+            <td colspan="5">저녁식사</td>
+          </tr>
+          <tr>
+            <td class="time-col">19:30–20:00</td>
+            <td>캠프 오리엔테이션</td>
+            <td colspan="5">에듀플렉스 자기주도 코칭 (독서·수학·감사일기)</td>
+            <td class="sat-col">하루 회고 &amp; 감사일기 나눔</td>
+          </tr>
+          <tr>
+            <td class="time-col">20:00–22:00</td>
+            <td>숙소 정착 및 취침</td>
+            <td colspan="5">자유시간 · 샤워 및 취침</td>
+            <td class="sat-col">자유시간 · 샤워 및 취침</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th class="time-col"></th>
+            <th>일<br><span>1/17</span></th><th>월<br><span>1/18</span></th><th>화<br><span>1/19</span></th>
+            <th>수<br><span>1/20</span></th><th>목<br><span>1/21</span></th><th>금<br><span>1/22</span></th>
+            <th class="sat-col">토<br><span>1/23</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-col">06:00–08:00</td>
+            <td colspan="6">기상 및 조식·아침 루틴 (체조·긍정확언)</td>
+            <td class="sat-col finale-cell" rowspan="6">캠프 피날레 &amp; 귀국<br><br>서호 산책 · 오션파크&amp;곤돌라 · 기념품 구입 · 피날레 저녁식사 &amp; 해단식 · 수료증 전달식 · 짐 정리 후 공항 이동<br><br>→ 23:35 하노이 출발, 익일 새벽 약 06:00 인천 도착(베트남항공)</td>
+          </tr>
+          <tr>
+            <td class="time-col">08:00–16:00</td>
+            <td>하노이 시내 문화체험</td>
+            <td colspan="5" class="hilite">Fairmont International School Vietnam 정규수업</td>
+          </tr>
+          <tr>
+            <td class="time-col">16:00–18:00</td>
+            <td>바짱 도자기마을 · 박물관</td>
+            <td colspan="5">귀가 및 자유시간</td>
+          </tr>
+          <tr>
+            <td class="time-col">18:00–19:00</td>
+            <td colspan="6">저녁식사</td>
+          </tr>
+          <tr>
+            <td class="time-col">19:30–20:00</td>
+            <td>하루 회고 &amp; 감사일기 나눔</td>
+            <td colspan="5">에듀플렉스 자기주도 코칭 (독서·수학·감사일기)</td>
+          </tr>
+          <tr>
+            <td class="time-col">20:00–22:00</td>
+            <td colspan="6">자유시간 · 샤워 및 취침</td>
+          </tr>
         </tbody>
       </table>
     </div>

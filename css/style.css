@@ -341,14 +341,29 @@ p { line-height: 1.75; color: var(--ink-soft); margin: 0 0 1em; }
 .founder-quote p { font-size: 0.9rem; color: var(--ink); }
 
 /* ---------- Calendar ---------- */
-.calendar-table-wrap { overflow-x: auto; margin-bottom: 20px; border-radius: var(--radius); box-shadow: var(--shadow); }
-.calendar-table { width: 100%; border-collapse: collapse; background: #fff; min-width: 720px; }
+.calendar-table-wrap { overflow-x: auto; margin-bottom: 20px; display: flex; flex-direction: column; gap: 22px; }
+.calendar-table { width: 100%; border-collapse: collapse; background: #fff; min-width: 760px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .calendar-table th {
-  background: var(--navy); color: #fff; padding: 12px 10px; font-size: 0.82rem; font-weight: 700;
+  background: var(--navy); color: #fff; padding: 10px 8px; font-size: 0.8rem; font-weight: 700; text-align: center;
 }
-.calendar-table td { padding: 10px; text-align: center; font-size: 0.85rem; border-bottom: 1px solid var(--border); }
-.cal-date td { font-weight: 700; color: var(--navy); background: #fbf7ee; }
-.cal-note { text-align: left !important; font-size: 0.8rem !important; color: var(--ink-soft); line-height: 1.7; padding: 14px 16px !important; }
+.calendar-table th span { display: block; font-weight: 400; font-size: 0.72rem; color: rgba(255,255,255,.7); margin-top: 2px; }
+.calendar-table th.sat-col { background: var(--gold-text); }
+.calendar-table td {
+  padding: 10px 8px; text-align: center; font-size: 0.78rem; color: var(--ink);
+  border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); vertical-align: middle;
+}
+.calendar-table td:last-child { border-right: none; }
+.calendar-table tbody tr:last-child td { border-bottom: none; }
+.calendar-table .time-col {
+  font-weight: 700; color: var(--navy); background: #fbf7ee; font-size: 0.74rem;
+  white-space: nowrap; text-align: center;
+}
+.calendar-table td.hilite { color: var(--gold-text); font-weight: 700; }
+.calendar-table td.sat-col { background: #fdf6e8; font-weight: 600; color: var(--gold-text); }
+.calendar-table td.finale-cell {
+  background: var(--navy); color: #fff; font-weight: 600; font-size: 0.76rem;
+  line-height: 1.7; text-align: left; padding: 18px 16px;
+}
 
 .stay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 24px 0 20px; }
 .stay-grid figure { margin: 0; background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
