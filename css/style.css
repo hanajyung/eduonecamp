@@ -573,3 +573,7 @@ p { line-height: 1.75; color: var(--ink-soft); margin: 0 0 1em; }
 @media (max-width: 760px) {
   .option-grid, .option-cols { grid-template-columns: 1fr; }
 }
+
+/* ---------- Partner link chips with QR ---------- */
+.link-chip-row a { display: flex; align-items: center; gap: 14px; }
+.link-chip-row .chip-qr { width: 64px; height: 64px; border-radius: 6px; background: #fff; padding: 3px; flex-shrink: 0; }
