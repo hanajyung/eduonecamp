@@ -558,3 +558,18 @@ p { line-height: 1.75; color: var(--ink-soft); margin: 0 0 1em; }
   .tag-row { grid-template-columns: 1fr; }
   .photo-duo { grid-template-columns: 1fr; }
 }
+
+/* ---------- Program options (A / B) ---------- */
+.option-heading { font-size: 1.25rem; color: var(--navy); margin: 44px 0 18px; }
+.option-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-bottom: 26px; }
+.option-card { background: #fff; border-radius: var(--radius); padding: 28px 30px; box-shadow: var(--shadow); }
+.option-card h4 { font-size: 1.2rem; color: var(--navy); margin-bottom: 6px; }
+.option-desc { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 18px; }
+.option-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.option-cols strong { display: block; font-size: 0.9rem; margin-bottom: 6px; }
+.option-cols .inc { color: var(--navy); }
+.option-cols .exc { color: #a41d36; }
+.option-cols p { font-size: 0.88rem; line-height: 1.7; }
+@media (max-width: 760px) {
+  .option-grid, .option-cols { grid-template-columns: 1fr; }
+}
