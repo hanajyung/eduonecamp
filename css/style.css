@@ -29,6 +29,8 @@ body {
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -337,8 +339,9 @@ p { line-height: 1.75; color: var(--ink-soft); margin: 0 0 1em; }
 .founder-lists ul li { font-size: 0.82rem; color: var(--ink-soft); padding: 4px 0 4px 14px; position: relative; }
 .founder-lists ul li::before { content: '•'; position: absolute; left: 0; color: var(--gold); }
 
-.founder-quote { background: var(--cream); border-radius: 10px; padding: 28px 30px; margin-bottom: 26px; }
-.founder-quote p { font-size: 0.9rem; color: var(--ink); }
+.founder-quote { background: var(--cream); border-radius: 10px; padding: 28px 30px; margin: 0 0 26px; }
+.founder-quote p { font-size: 0.92rem; line-height: 1.85; color: var(--ink); }
+.founder-quote p:last-child { margin-bottom: 0; }
 
 /* ---------- Calendar ---------- */
 .calendar-table-wrap { overflow-x: auto; margin-bottom: 20px; display: flex; flex-direction: column; gap: 22px; }
@@ -550,6 +553,10 @@ p { line-height: 1.75; color: var(--ink-soft); margin: 0 0 1em; }
   .isp-stats { padding: 22px 20px; }
   .campus-gallery { grid-template-columns: 1fr 1fr; }
   .founder-lists { grid-template-columns: 1fr; }
+  .founder-card { padding: 28px 18px; }
+  .leader-card { padding: 26px 18px; }
+  .founder-quote { padding: 22px 18px; }
+  .brand-box { padding: 18px; }
   .principle-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .consult-panel { padding: 28px 22px; }
